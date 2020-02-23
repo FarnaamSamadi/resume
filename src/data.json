@@ -1,0 +1,22 @@
+{
+  "title": "Hello I'm Farnaam Samadi",
+  "subtitle": "Electrical Engineer and also interested in all kinds of Computer Programming, Data Science",
+  "links": {
+    "github": "https://github.com/FarnaamSamadi",
+    "gitlab": "https://gitlab.com/feritheprogrammer",
+    "stackOverFlow": "https://stackoverflow.com/story/farnaamsamadi",
+    "linkedIn": "www.linkedin.com/in/farnaamsamadi",
+    "researchGate": "https://www.researchgate.net/profile/Farnaam_Samadi"
+  },
+  "sections": [
+    {
+      "title": "about",
+      "items": [
+        {
+          "type": "p",
+          "content": "some text about me"
+        }
+      ]
+    }
+  ]
+}
