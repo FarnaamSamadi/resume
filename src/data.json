@@ -4,8 +4,9 @@
   "links": {
     "github": "https://github.com/FarnaamSamadi",
     "gitlab": "https://gitlab.com/feritheprogrammer",
+    "facebook": "https://www.facebook.com/farnaamsamadi",
     "stackOverFlow": "https://stackoverflow.com/story/farnaamsamadi",
-    "linkedIn": "www.linkedin.com/in/farnaamsamadi",
+    "linkedIn": "https://www.linkedin.com/in/farnaamsamadi",
     "researchGate": "https://www.researchgate.net/profile/Farnaam_Samadi"
   },
   "sections": [
@@ -17,6 +18,20 @@
           "content": "some text about me"
         }
       ]
+    }
+  ],
+  "skills": [
+    {
+      "title": "Python",
+      "card": "./icons/python.svg"
+    },
+    {
+      "title": "JavaScript",
+      "card": "./icons/js.svg"
+    },
+    {
+      "title": "PHP",
+      "card": "./icons/php.svg"
     }
   ]
 }

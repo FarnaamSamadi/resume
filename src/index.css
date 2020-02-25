@@ -10884,6 +10884,18 @@ video {
   transition-duration: 1000ms;
 }
 
+.full-page {
+  height: 100vh;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .container {
   width: 100%;
 }

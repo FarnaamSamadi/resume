@@ -1,28 +1,47 @@
 import React, { Component } from "react";
+import SkillCard from "./skillCard";
+import data from "../data.json";
+import { SocialIcon } from "react-social-icons";
+import iconFinder from "./icons/icons.jsx";
 
 class Main extends Component {
-  state = {
-    time: new Date(),
-    pause: false
-  };
+  state = {};
 
-  componentDidMount() {
-    this.interval = setInterval(() => {
-      this.tick();
-    }, 1000);
-  }
-
-  tick = () => {
-    this.setState({ time: new Date() });
-  };
-
-  toggleWatch = () => {};
+  componentDidMount() {}
 
   render() {
-    let { time } = this.state;
+    const { title, subtitle, links, skills } = data;
+    const socials = Object.keys(links);
+
     return (
-      <div className="bg-indigo-300" onClick={() => this.toggleWatch()}>
-        Now is: {time.toLocaleTimeString()}
+      <div>
+        <div className="full-page bg-indigo-300">
+          <h1 className="text-3xl rounded-lg p-2 font-bold mb-2">{title}</h1>
+          <h2 className="text-xl p-2 font-semibold">{subtitle}</h2>
+          <h3 className="font-semibold m-2">Find me Everywhere</h3>
+          <div>
+            {socials.map(item => (
+              <SocialIcon key={item} className="m-1" url={links[item]} />
+            ))}
+          </div>
+        </div>
+        <div className="full-page bg-red-300">
+          <h1 className="text-3xl font-semibold mb-2">About Me</h1>
+          there is only text in this page.
+          <div>{iconFinder("gitlab")}</div>
+        </div>
+        <div className="full-page bg-green-300">
+          <h1 className="text-3xl font-semibold mb-5">Skills part</h1>
+          <div className="flex flex-row justify-around w-full">
+            {skills.map(skill => (
+              <SkillCard
+                key={skill.title}
+                cardSVG={iconFinder(skill.title)}
+                cardTitle={skill.title}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     );
   }

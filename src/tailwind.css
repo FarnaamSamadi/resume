@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind utilities;
+
+.full-page {
+  @apply h-screen w-full mx-auto flex flex-col justify-center items-center text-center;
+}
+
 @tailwind components;
