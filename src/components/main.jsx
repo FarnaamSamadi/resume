@@ -15,20 +15,9 @@ class Main extends Component {
 
     return (
       <div>
-        <div className="full-page bg-indigo-300">
-          <h1 className="text-3xl rounded-lg p-2 font-bold mb-2">{title}</h1>
-          <h2 className="text-xl p-2 font-semibold">{subtitle}</h2>
-          <h3 className="font-semibold m-2">Find me Everywhere</h3>
-          <div>
-            {socials.map(item => (
-              <SocialIcon key={item} className="m-1" url={links[item]} />
-            ))}
-          </div>
-        </div>
         <div className="full-page bg-red-300">
           <h1 className="text-3xl font-semibold mb-2">About Me</h1>
           there is only text in this page.
-          <div>{iconFinder("gitlab")}</div>
         </div>
         <div className="full-page bg-green-300">
           <h1 className="text-3xl font-semibold mb-5">Skills part</h1>
