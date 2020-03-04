@@ -9,29 +9,37 @@
     "linkedIn": "https://www.linkedin.com/in/farnaamsamadi",
     "researchGate": "https://www.researchgate.net/profile/Farnaam_Samadi"
   },
-  "sections": [
-    {
-      "title": "about",
-      "items": [
-        {
-          "type": "p",
-          "content": "some text about me"
-        }
-      ]
-    }
-  ],
+  "about": {
+    "explanation": "MSc in Electrical Engineering (Integrated Circuits). I've done many projects in the fields of Image Processing, Machine Learning and Deep Learning. My MSc Thesis is also based on deep learning. Currently back and forth in Python, JavaScript, and PHP."
+  },
   "skills": [
     {
-      "title": "Python",
-      "card": "./icons/python.svg"
-    },
-    {
+      "name": "js",
       "title": "JavaScript",
-      "card": "./icons/js.svg"
+      "subSkill": ["Nodejs", "React", "Vuejs"]
     },
     {
+      "name": "php",
       "title": "PHP",
-      "card": "./icons/php.svg"
+      "subSkill": ["Laravel"]
+    },
+    {
+      "name": "python",
+      "title": "Python",
+      "subSkill": ["ScikitLearn", "Tensorflow"]
+    },
+    {
+      "name": "other",
+      "title": "Other Skills",
+      "subSkill": [
+        "Git",
+        "HTML",
+        "CSS",
+        "MySQL",
+        "Sass",
+        "BootStrap",
+        "TailWindCSS"
+      ]
     }
   ]
 }
