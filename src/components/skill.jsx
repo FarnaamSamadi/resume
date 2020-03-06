@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Element } from "react-scroll";
 import SkillCard from "./skillCard";
 import Arrow from "./arrow";
 import data from "../data.json";
@@ -15,6 +16,7 @@ class Skill extends Component {
     return (
       <div>
         <div className="h-auto w-full mx-auto flex flex-col justify-center items-center text-center bg-indigo-300">
+          <Element name="skills" className="element" />
           <h1 className="h1 bg-gray-900 border-gray-400  text-gray-400">
             Skills Part
           </h1>
