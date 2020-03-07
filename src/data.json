@@ -1,16 +1,16 @@
 {
-  "title": "Hello I'm Farnaam Samadi",
-  "subtitle": "Electrical Engineer and also interested in all kinds of Computer Programming, Data Science",
+  "title": "Hello, My name is Farnaam Samadi. I'm",
+  "subtitle": "Electrical Engineer | Computer Programmer | Data Science Enthusiast | Language Learner (humans & machines)",
   "links": {
     "github": "https://github.com/FarnaamSamadi",
     "gitlab": "https://gitlab.com/feritheprogrammer",
-    "stackOverFlow": "https://stackoverflow.com/story/farnaamsamadi",
-    "facebook": "https://www.facebook.com/farnaamsamadi",
+    "researchGate": "https://www.researchgate.net/profile/Farnaam_Samadi",
     "linkedIn": "https://www.linkedin.com/in/farnaamsamadi",
-    "researchGate": "https://www.researchgate.net/profile/Farnaam_Samadi"
+    "stackOverFlow": "https://stackoverflow.com/story/farnaamsamadi",
+    "facebook": "https://www.facebook.com/farnaamsamadi"
   },
   "about": {
-    "explanation": "MSc in Electrical Engineering (Integrated Circuits). I've done many projects in the fields of Image Processing, Machine Learning and Deep Learning. My MSc Thesis is also based on deep learning. Currently back and forth in Python, JavaScript, and PHP."
+    "explanation": "I have MSc degree in Electrical Engineering, branch of Integrated Circuits, from Chamran university. I've done many projects in the fields of Image Processing, Machine Learning and Deep Learning. My MSc Thesis is also based on deep learning. Currently I'm doing computer programming in JavaScript, PHP and Python languages."
   },
   "skills": [
     {
