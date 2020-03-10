@@ -11,17 +11,17 @@ class Skill extends Component {
   componentDidMount() {}
 
   render() {
-    const { skills } = data;
+    const { info, title } = data.skills;
 
     return (
       <div>
         <div className="h-auto w-full mx-auto flex flex-col justify-center items-center text-center bg-indigo-300">
           <Element name="skills" className="element" />
           <h1 className="h1 bg-gray-900 border-gray-400  text-gray-400">
-            Skills Part
+            {title[this.props.lan]}
           </h1>
           <div className="content-center">
-            {skills.map(skill => (
+            {info.map(skill => (
               <div className="flex flex-col justify-center w-full m-2">
                 <div className="flex flex-row">
                   <div className="w-2/12 mr-3">

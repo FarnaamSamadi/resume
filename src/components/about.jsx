@@ -3,8 +3,15 @@ import data from "../data.json";
 import { Link, Element } from "react-scroll";
 import iconFinder from "./icons/icons";
 
-const About = props => {
+const About = ({ lan }) => {
   const { about } = data;
+
+  function fixFarsiParagraphs(classes) {
+    return lan === "fa"
+      ? (classes += "text-right direction-rtl")
+      : (classes += "text-left");
+  }
+
   return (
     <div className="h-screen w-full bg-yellow-500">
       <Element name="about" className="element" />
@@ -13,10 +20,16 @@ const About = props => {
           className="flex flex-col justify-center items-center"
           style={{ flexGrow: 5 }}
         >
-          <h1 className="h1 w-2/12 text-indigo-300 bg-indigo-800 border-indigo-300">
-            About Me
+          <h1 className="h1 w-42 text-indigo-300 bg-indigo-800 border-indigo-300">
+            {about[lan].title}
           </h1>
-          {about.explanation}
+          <div className={fixFarsiParagraphs("")}>
+            {Object.keys(about[lan].info).map(line => (
+              <p key={line} className="text-2xl leading-loose">
+                {about[lan].info[line]}
+              </p>
+            ))}
+          </div>
         </div>
         <div style={{ flexGrow: 1 }}>
           <Link

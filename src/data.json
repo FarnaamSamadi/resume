@@ -1,6 +1,51 @@
 {
-  "title": "Hello, My name is Farnaam Samadi. I'm",
-  "subtitle": "Electrical Engineer | Computer Programmer | Data Science Enthusiast | Language Learner (humans & machines)",
+  "mainInfo": {
+    "en": {
+      "partOne": "Hello, My name is Farnaam Samadi.",
+      "partTwo": " I'm",
+      "partThree": [
+        "Electrical Engineer",
+        "Computer Programmer",
+        "Data Science Enthusiast",
+        "Ultimate Language Learner"
+      ],
+      "partFour": "Find me on Social media:"
+    },
+    "fa": {
+      "partOne": "سلام من فرنام صمدی هستم.",
+      "partTwo": "",
+      "partThree": [
+        "مهندس برق",
+        "برنامه‌نویس کامپیوتر",
+        "علاقه‌مند علوم داده",
+        "یادگیر تمام وقت زبان"
+      ],
+      "partFour": "مرا در شبکه‌های اجتماعی بیابید:",
+      "partFive": "کارشناس ارشد مهندسی برق-الکترونیک در گرایش مدارهای مجتمع"
+    }
+  },
+  "about": {
+    "en": {
+      "title": "About me",
+      "info": {
+        "lineOne": "I love to learn, especially languages no matter of computers language or humans.",
+        "lineTwo": "I'm an all time learner also a self-taught programmer.",
+        "lineThree": "I have MSc degree in Electrical Engineering, branch of Integrated Circuits, from Chamran university. ",
+        "lineFour": "I've done many projects in the fields of Image Processing, Machine Learning and Deep Learning. My MSc Thesis is also based on deep learning.",
+        "lineFive": "Currently I'm doing computer programming in JavaScript, PHP and Python languages."
+      }
+    },
+    "fa": {
+      "title": "درباره‌ی من",
+      "info": {
+        "lineOne": "مشتاق یادگیری بخصوص زبان چه زبان‌های کامپیوتری چه زبان‌های خارجی",
+        "lineTwo": "یک یادگیر تمام‌وقت همچنین یک برنامه‌نویس خود‌آموز",
+        "lineThree": "دارای مدرک فوق لیسانس مهندسی برق، گرایش مدارهای مجتمع از دانشگاه چمران ",
+        "lineFour": "انجام پروژه‌های زیاد در زمینه‌ی پردازش تصویر، یادگیری ماشین و یادگیری عمیق. همچنین مبتنی بر یادگیری عمیق بودن تز ارشد",
+        "lineFive": "در حال حاضر مشغول به برنامه‌نویسی به زبان‌های جاوااسکریپت، پایتان و PHP."
+      }
+    }
+  },
   "links": {
     "github": "https://github.com/FarnaamSamadi",
     "gitlab": "https://gitlab.com/feritheprogrammer",
@@ -9,37 +54,37 @@
     "stackOverFlow": "https://stackoverflow.com/story/farnaamsamadi",
     "facebook": "https://www.facebook.com/farnaamsamadi"
   },
-  "about": {
-    "explanation": "I have MSc degree in Electrical Engineering, branch of Integrated Circuits, from Chamran university. I've done many projects in the fields of Image Processing, Machine Learning and Deep Learning. My MSc Thesis is also based on deep learning. Currently I'm doing computer programming in JavaScript, PHP and Python languages."
-  },
-  "skills": [
-    {
-      "name": "js",
-      "title": "JavaScript",
-      "subSkill": ["Nodejs", "React", "Vuejs"]
-    },
-    {
-      "name": "php",
-      "title": "PHP",
-      "subSkill": ["Laravel"]
-    },
-    {
-      "name": "python",
-      "title": "Python",
-      "subSkill": ["ScikitLearn", "Tensorflow"]
-    },
-    {
-      "name": "other",
-      "title": "Other Skills",
-      "subSkill": [
-        "Git",
-        "HTML",
-        "CSS",
-        "MySQL",
-        "Sass",
-        "BootStrap",
-        "TailWindCSS"
-      ]
-    }
-  ]
+  "skills": {
+    "title": { "en": "Skills", "fa": "مهارت‌ها" },
+    "info": [
+      {
+        "name": "js",
+        "title": "JavaScript",
+        "subSkill": ["Nodejs", "React", "Vuejs"]
+      },
+      {
+        "name": "php",
+        "title": "PHP",
+        "subSkill": ["Laravel"]
+      },
+      {
+        "name": "python",
+        "title": "Python",
+        "subSkill": ["ScikitLearn", "Tensorflow"]
+      },
+      {
+        "name": "other",
+        "title": "Other Skills",
+        "subSkill": [
+          "Git",
+          "HTML",
+          "CSS",
+          "MySQL",
+          "Sass",
+          "BootStrap",
+          "TailWindCSS"
+        ]
+      }
+    ]
+  }
 }

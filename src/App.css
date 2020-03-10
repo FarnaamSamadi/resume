@@ -1,3 +1,11 @@
 html {
   height: 100%;
 }
+
+.direction-rtl {
+  direction: rtl;
+}
+
+.direction-ltr {
+  direction: ltr;
+}
