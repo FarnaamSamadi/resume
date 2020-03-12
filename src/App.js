@@ -33,7 +33,7 @@ class App extends Component {
         />
         <Introduction language={lan} />
         <About lan={lan} />
-        {/* <Skill lan={lan} /> */}
+        <Skill lan={lan} />
       </div>
     );
   }
