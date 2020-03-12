@@ -6,7 +6,8 @@ import Skill from "./components/skill";
 
 class App extends Component {
   state = {
-    lan: "en"
+    lan: "en",
+    isDropdownOpen: false
   };
 
   handleLanguage = () => {
@@ -14,14 +15,25 @@ class App extends Component {
     this.setState({ lan });
   };
 
+  handleNavbarDropdown = () => {
+    this.setState(prevState => {
+      return { isDropdownOpen: !prevState.isDropdownOpen };
+    });
+  };
+
   render() {
-    const { lan } = this.state;
+    const { lan, isDropdownOpen } = this.state;
     return (
       <div>
-        <Navbar onLanguageChange={this.handleLanguage} lan={lan} />
-        <Introduction language={lan} />
-        <About lan={lan} />
-        <Skill lan={lan} />
+        <Navbar
+          onLanguageChange={this.handleLanguage}
+          lan={lan}
+          isOpen={isDropdownOpen}
+          toggleDropdown={this.handleNavbarDropdown}
+        />
+        {/* <Introduction language={lan} /> */}
+        {/* <About lan={lan} />
+        <Skill lan={lan} /> */}
       </div>
     );
   }

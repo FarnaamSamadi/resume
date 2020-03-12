@@ -1,7 +1,11 @@
 module.exports = {
   theme: {
-    extend: {},
-  },
-  variants: {},
-  plugins: [],
-}
+    extend: {
+      screens: {
+        xs: "480px"
+      }
+    },
+    variants: {},
+    plugins: []
+  }
+};
