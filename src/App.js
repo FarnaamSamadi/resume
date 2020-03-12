@@ -31,9 +31,9 @@ class App extends Component {
           isOpen={isDropdownOpen}
           toggleDropdown={this.handleNavbarDropdown}
         />
-        {/* <Introduction language={lan} /> */}
-        {/* <About lan={lan} />
-        <Skill lan={lan} /> */}
+        <Introduction language={lan} />
+        <About lan={lan} />
+        {/* <Skill lan={lan} /> */}
       </div>
     );
   }

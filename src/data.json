@@ -1,8 +1,8 @@
 {
   "mainInfo": {
     "en": {
-      "partOne": "Hello, My name is Farnaam Samadi.",
-      "partTwo": " I'm",
+      "partOne": "Hello, ",
+      "partTwo": "My name is Farnaam Samadi.",
       "partThree": [
         "Electrical Engineer",
         "Computer Programmer",
@@ -12,8 +12,8 @@
       "partFour": "Find me on Social media:"
     },
     "fa": {
-      "partOne": "سلام من فرنام صمدی هستم.",
-      "partTwo": "",
+      "partOne": "سلام،",
+      "partTwo": " من فرنام صمدی هستم.",
       "partThree": [
         "مهندس برق",
         "برنامه‌نویس کامپیوتر",

@@ -74,13 +74,13 @@ const Navbar = ({ onLanguageChange, lan, isOpen, toggleDropdown }) => {
       </div>
       <div
         className={generateDropdownClasses(
-          "relative z-10 px-1 pb-3 pt-2 text-white font-semibold font-mono"
+          "absolute z-10 px-1 pb-3 pt-2 text-white bg-gray-800 w-full font-semibold font-mono"
         )}
       >
         {Object.keys(navItems).map(item => (
           <NavItem key={item} to={item} itemName={navItems[item]} />
         ))}
-        <hr className="mt-2 mx-auto border-2 rounded-full" />
+        <hr className="mt-2 mx-auto border-2 rounded-full border-gray-700" />
         <div className=" cursor-pointer block px-2 mt-2 rounded hover:bg-gray-700 ">
           <button
             onClick={onLanguageChange}
