@@ -60,31 +60,40 @@
       {
         "name": "js",
         "title": "JavaScript",
-        "subSkill": ["Nodejs", "React", "Vuejs"]
+        "stars": 3,
+        "subSkill": [
+          { "name": "Nodejs", "stars": 1 },
+          { "name": "React", "stars": 2 },
+          { "name": "Vuejs", "stars": 1 }
+        ]
       },
       {
         "name": "php",
         "title": "PHP",
-        "subSkill": ["Laravel"]
+        "stars": 2,
+        "subSkill": [{ "name": "Laravel", "stars": 3 }]
       },
       {
         "name": "python",
         "title": "Python",
-        "subSkill": ["ScikitLearn", "Tensorflow"]
-      },
-      {
-        "name": "other",
-        "title": "Other Skills",
+        "stars": 3,
         "subSkill": [
-          "Git",
-          "HTML",
-          "CSS",
-          "MySQL",
-          "Sass",
-          "BootStrap",
-          "TailWindCSS"
+          { "name": "ScikitLearn", "stars": 2 },
+          { "name": "Tensorflow", "stars": 1 }
         ]
       }
+    ]
+  },
+  "otherSkills": {
+    "title": { "en": "Other Skills", "fa": "سایر مهارت‌ها" },
+    "subSkill": [
+      { "name": "Git", "stars": 2 },
+      { "name": "MySQL", "stars": 2 },
+      { "name": "HTML", "stars": 3 },
+      { "name": "CSS", "stars": 2 },
+      { "name": "BootStrap", "stars": 3 },
+      { "name": "TailWindCSS", "stars": 3 },
+      { "name": "Sass", "stars": 1 }
     ]
   }
 }

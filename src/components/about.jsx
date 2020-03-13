@@ -20,7 +20,7 @@ const About = ({ lan }) => {
           className="flex flex-col justify-center items-center"
           style={{ flexGrow: 5 }}
         >
-          <h2 className="text-2xl font-bold my-3 border-4 rounded-lg py-1 px-2 w-28 text-gray-200 bg-gray-900 border-gray-200">
+          <h2 className="text-2xl font-bold mt-3 mb-6 border-4 rounded-lg py-1 px-2 w-28 text-gray-200 bg-gray-900 border-gray-200">
             {about[lan].title}
           </h2>
           <div
@@ -47,7 +47,7 @@ const About = ({ lan }) => {
             offset={-30}
             duration={300}
           >
-            {iconFinder("down-arrow", 30, "#edf2f7")}
+            {iconFinder("down-arrow", 40, "#edf2f7")}
           </Link>
         </div>
       </div>

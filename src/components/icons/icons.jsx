@@ -4,7 +4,7 @@ export default function iconFinder(
   icon,
   size = 100,
   color = "#2d3748",
-  secondColor = "#edf2f7"
+  secondColor = "#a0aec0"
 ) {
   switch (icon.toLowerCase()) {
     case "gitlab":
