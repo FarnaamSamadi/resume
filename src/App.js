@@ -3,6 +3,7 @@ import Navbar from "./components/navbar";
 import Introduction from "./components/introduction";
 import About from "./components/about";
 import Skill from "./components/skill";
+import Footer from "./components/footer";
 
 class App extends Component {
   state = {
@@ -12,7 +13,7 @@ class App extends Component {
 
   handleLanguage = () => {
     const lan = this.state.lan === "en" ? "fa" : "en";
-    this.setState({ lan });
+    this.setState({ lan, isDropdownOpen: false });
   };
 
   handleNavbarDropdown = () => {
@@ -34,6 +35,7 @@ class App extends Component {
         <Introduction language={lan} />
         <About lan={lan} />
         <Skill lan={lan} />
+        <Footer lan={lan} />
       </div>
     );
   }
