@@ -84,7 +84,7 @@ const Navbar = ({ onLanguageChange, lan, isOpen, toggleDropdown }) => {
         <div className=" cursor-pointer block px-2 mt-2 rounded hover:bg-gray-700 ">
           <button
             onClick={onLanguageChange}
-            className="font-semibold focus:outline-none"
+            className="font-semibold focus:outline-none sm:text-lg"
           >
             {lan === "en" ? "Change Language" : "عوض کردن زبان"}
           </button>

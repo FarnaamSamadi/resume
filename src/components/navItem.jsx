@@ -9,7 +9,8 @@ const NavItem = ({ to, itemName }) => {
     "font-semibold",
     "px-2",
     "rounded",
-    "hover:bg-gray-700"
+    "hover:bg-gray-700",
+    "sm:text-lg"
   ];
 
   return (

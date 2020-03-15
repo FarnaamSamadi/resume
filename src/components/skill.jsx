@@ -16,9 +16,9 @@ class Skill extends Component {
 
     return (
       <div>
-        <div className="h-auto w-full mx-auto flex flex-col justify-center items-center text-center bg-gray-100 mb-6">
+        <div className="h-auto w-full mx-auto flex flex-col justify-center items-center text-center bg-gray-100 mb-6 ">
           <Element name="skills" className="element" />
-          <h2 className="text-2xl font-bold mt-3 mb-5 border-4 rounded-lg py-1 px-2 w-28 text-gray-900 bg-gray-200 border-gray-900">
+          <h2 className="text-xl font-bold mt-3 mb-5 border-4 rounded-lg py-1 px-2 w-28 sm:py-2 sm:px-3 sm:text-2xl text-gray-900 bg-gray-200 border-gray-900">
             {title[lan]}
           </h2>
           <table className="table-fixed border-4 mx-4 border-black">

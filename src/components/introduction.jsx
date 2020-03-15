@@ -26,7 +26,9 @@ class Introduction extends Component {
               {mainInfo[lan].partThree.map(i => (
                 <div
                   key={i}
-                  className={lan === "fa" ? "text-right" : "text-left"}
+                  className={
+                    lan === "fa" ? "text-right sm:py-1" : "text-left sm:py-1"
+                  }
                 >
                   <i className="fa fa-check-square mx-3" aria-hidden="true"></i>
                   {i}
