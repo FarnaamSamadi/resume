@@ -6,12 +6,6 @@ import iconFinder from "./icons/icons";
 const About = ({ lan }) => {
   const { about } = data;
 
-  function fixFarsiParagraphs(classes) {
-    return lan === "fa"
-      ? (classes += "text-right direction-rtl")
-      : (classes += "text-left");
-  }
-
   return (
     <div className="h-screen w-full bg-gray-900">
       <Element name="about" className="element" />
@@ -31,7 +25,7 @@ const About = ({ lan }) => {
             {Object.keys(about[lan].info).map(line => (
               <p
                 key={line}
-                className="text-white font-semibold py-1 sm:py-2 sm:text-lg"
+                className="text-white font-semibold py-1 sm:py-2 sm:text-lg lg:py-3 lg:text-xl"
               >
                 <i
                   className="fa fa-pencil mx-2 text-gray-100"

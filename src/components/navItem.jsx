@@ -15,7 +15,7 @@ const NavItem = ({ to, itemName }) => {
 
   return (
     <div className={navItemClasses.join(" ")}>
-      <Link to={to} spy={true} smooth={true} offset={-30} duration={400}>
+      <Link to={to} spy={true} smooth={true} offset={-40} duration={400}>
         {itemName}
       </Link>
     </div>

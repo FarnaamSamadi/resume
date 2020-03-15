@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Element } from "react-scroll";
 import SkillCard from "./skillCard";
 import data from "../data.json";
-import iconFinder from "./icons/icons.jsx";
 
 class Skill extends Component {
   state = {};
@@ -21,13 +20,13 @@ class Skill extends Component {
           <h2 className="text-xl font-bold mt-3 mb-5 border-4 rounded-lg py-1 px-2 w-28 sm:py-2 sm:px-3 sm:text-2xl text-gray-900 bg-gray-200 border-gray-900">
             {title[lan]}
           </h2>
-          <table className="table-fixed border-4 mx-4 border-black">
+          <table className="container sm:max-w-lg lg:max-w-2xl table-fixed border-4 mx-4 border-black">
             <thead>
               <tr className="border">
-                <th className="w-3/12 px-4 py-2 font-bold border border-gray-600">
+                <th className="w-4/12 px-4 py-2 font-bold lg:text-lg border border-gray-600">
                   {lan === "fa" ? "زبان" : "Language"}
                 </th>
-                <th className="w-8/12 px-4 py-2 font-bold border border-gray-600">
+                <th className="w-7/12 px-4 py-2 font-bold lg:text-lg border border-gray-600">
                   {lan === "fa" ? "کتابخانه" : "Library"}
                 </th>
               </tr>
@@ -37,7 +36,7 @@ class Skill extends Component {
                 <tr key={skill.name} className="border">
                   <td className="border border-gray-600">
                     <SkillCard
-                      cardSVG={iconFinder(skill.name, 50)}
+                      cardName={skill.name}
                       nStars={skill.stars}
                       cardType="big"
                     />
@@ -47,7 +46,7 @@ class Skill extends Component {
                       {skill.subSkill.map(s => (
                         <SkillCard
                           key={s.name}
-                          cardSVG={iconFinder(s.name)}
+                          cardName={s.name}
                           nStars={s.stars}
                           cardType="small"
                         />
@@ -57,7 +56,7 @@ class Skill extends Component {
                 </tr>
               ))}
               <tr className="border border-gray-600">
-                <th colSpan="2" className="px-4 py-2 font-bold">
+                <th colSpan="2" className="px-4 py-2 font-bold lg:text-lg">
                   {otherSkills.title[lan]}
                 </th>
               </tr>
@@ -67,7 +66,7 @@ class Skill extends Component {
                     {otherSkills.subSkill.map(s => (
                       <SkillCard
                         key={s.name}
-                        cardSVG={iconFinder(s.name)}
+                        cardName={s.name}
                         nStars={s.stars}
                         cardType="small"
                       />

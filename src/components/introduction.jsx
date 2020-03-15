@@ -18,11 +18,17 @@ class Introduction extends Component {
         <Element name="intro" />
         <div className="mx-auto h-full container flex flex-col justify-center items-center text-center">
           <div className="flex flex-col justify-center" style={{ flexGrow: 5 }}>
-            <h1 className={fixFarsi("text-2xl rounded-lg p-2 font-bold mb-2")}>
+            <h1
+              className={fixFarsi(
+                "text-2xl rounded-lg p-2 font-bold lg:mb-5 lg:text-3xl"
+              )}
+            >
               {mainInfo[lan].partOne} <br />
               {mainInfo[lan].partTwo}
             </h1>
-            <h2 className={fixFarsi("text-xl p-2 font-semibold mb-5")}>
+            <h2
+              className={fixFarsi("text-xl p-2 font-semibold mb-5 lg:hidden")}
+            >
               {mainInfo[lan].partThree.map(i => (
                 <div
                   key={i}
@@ -36,7 +42,14 @@ class Introduction extends Component {
                 </div>
               ))}
             </h2>
-            <h3 className={fixFarsi("m-1")}>{mainInfo[lan].partFour}</h3>
+            <h2
+              className={fixFarsi("hidden text-xl p-2 font-bold mb-5 lg:block")}
+            >
+              {mainInfo[lan].partThree.join(" | ")}
+            </h2>
+            <h3 className={fixFarsi("m-2 lg:text-lg")}>
+              {mainInfo[lan].partFour}
+            </h3>
             <div className="flex flex-row justify-center items-center mt-2">
               {Object.keys(links).map(item => (
                 <SocialIcon key={item} url={links[item]} iconName={item} />
