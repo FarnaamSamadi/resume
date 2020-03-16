@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Navbar from "./components/navbar";
+import SnowStorm from "react-snowstorm";
+import Navbar from "./components/navbar/navbar";
 import Introduction from "./components/introduction";
 import About from "./components/about";
 import Skill from "./components/skill";
@@ -9,6 +10,15 @@ class App extends Component {
   state = {
     lan: "en",
     isDropdownOpen: false
+  };
+
+  navItems = {
+    en: {
+      intro: "Intro",
+      about: "About",
+      skills: "Skills"
+    },
+    fa: { intro: "مقدمه", about: "درباره‌ من", skills: "مهارت‌ها" }
   };
 
   handleLanguage = () => {
@@ -31,7 +41,9 @@ class App extends Component {
           lan={lan}
           isOpen={isDropdownOpen}
           toggleDropdown={this.handleNavbarDropdown}
+          items={this.navItems}
         />
+        <SnowStorm followMouse={true} />
         <Introduction language={lan} />
         <About lan={lan} />
         <Skill lan={lan} />

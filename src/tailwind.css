@@ -9,4 +9,104 @@
   @apply text-3xl font-bold my-5 border-4 rounded-md py-1 px-2;
 }
 
+.navbar {
+  @apply sticky bg-gray-800 top-0;
+}
+
+.navbar-div {
+  @apply flex flex-row items-center justify-between px-3 py-2;
+}
+
+.navbar-items {
+  @apply hidden text-white text-xl px-3 py-2 flex-row items-center justify-between;
+}
+
+.active-class {
+  @apply font-semibold text-lg;
+}
+
+.inactive-class {
+  @apply text-gray-400;
+}
+
+.lan-div {
+  @apply hidden;
+}
+
+.lan-button {
+  @apply p-1 text-white;
+}
+
+.lan-button:focus {
+  @apply outline-none;
+}
+
+.dropdown-div {
+  @apply px-3 py-2;
+}
+
+.dropdown-icon {
+  @apply text-gray-500;
+}
+
+.dropdown-icon:hover {
+  @apply text-white;
+}
+
+.dropdown-items {
+  @apply absolute z-10 px-1 pb-3 pt-2 text-white bg-gray-800 w-full font-semibold font-mono;
+}
+
+.dropdown-hr {
+  @apply mt-2 mx-auto border-2 rounded-full border-gray-700;
+}
+
+.dropdown-nav-items {
+  @apply cursor-pointer mt-1 block font-semibold px-2 rounded;
+}
+
+.dropdown-nav-items:hover {
+  @apply bg-gray-700;
+}
+
+.dropdown-lan-btn {
+  @apply font-semibold;
+}
+
+.dropdown-lan-btn:focus {
+  @apply outline-none;
+}
+
+.dropdown-close {
+  @apply fixed inset-0 w-full h-full cursor-default;
+}
+
+@screen sm {
+  .dropdown-nav-items {
+    @apply text-lg;
+  }
+
+  .dropdown-lan-btn {
+    @apply text-lg;
+  }
+}
+
+@screen lg {
+  .navbar-items {
+    @apply flex;
+  }
+
+  .lan-div {
+    @apply block;
+  }
+
+  .dropdown-div {
+    @apply hidden;
+  }
+
+  .dropdown-items {
+    @apply hidden;
+  }
+}
+
 @tailwind components;

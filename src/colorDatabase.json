@@ -1,0 +1,13 @@
+{
+  "colors": [
+    ["bg-green-900", "text-green-200"],
+    ["bg-green-200", "text-green-900"],
+    ["bg-yellow-200", "text-yellow-900"],
+    ["bg-yellow-200", "text-yellow-200"],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""],
+    ["", ""]
+  ]
+}
