@@ -117,6 +117,22 @@
   @apply rounded-full mr-1;
 }
 
+.part-title {
+  @apply text-xl font-bold mt-3 mb-6 border-4 rounded-lg py-1 px-2;
+}
+
+.line {
+  @apply text-white font-semibold py-1;
+}
+
+.line-rtl {
+  @apply text-right px-6;
+}
+
+.line-ltr {
+  @apply text-left px-6;
+}
+
 @screen sm {
   .dropdown-nav-items {
     @apply text-lg;
@@ -128,6 +144,14 @@
 
   .social-icon-outer {
     @apply mx-1;
+  }
+
+  .part-title {
+    @apply py-2 px-3 text-2xl;
+  }
+
+  .line {
+    @apply py-2 text-lg;
   }
 }
 
@@ -162,6 +186,10 @@
 
   .features-lg {
     @apply block;
+  }
+
+  .line {
+    @apply py-3 text-xl;
   }
 }
 

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import SnowStorm from "react-snowstorm";
 import Navbar from "./components/navbar/navbar";
 import Introduction from "./components/introduction/introduction";
-import About from "./components/about";
+import About from "./components/about/about";
 import Skill from "./components/skill";
 import Footer from "./components/footer";
 

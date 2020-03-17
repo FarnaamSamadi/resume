@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Element } from "react-scroll";
 import DataHolder from "./subComponents/dataHolder";
-import DownButton from "./subComponents/downButton";
+import DownButton from "../common/downButton";
 
 class Introduction extends Component {
   render() {
@@ -10,7 +10,7 @@ class Introduction extends Component {
         <Element name="intro" />
         <div className="container part-set">
           <DataHolder lan={this.props.lan} />
-          <DownButton to="about" />
+          <DownButton to="about" color="#2d3748" />
         </div>
       </div>
     );
