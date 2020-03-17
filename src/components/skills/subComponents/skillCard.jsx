@@ -1,6 +1,6 @@
 import React from "react";
 import Star from "./star";
-import iconFinder from "./icons/icons.jsx";
+import iconFinder from "../../icons/icons";
 
 const SkillCard = ({ cardName, nStars, cardType }) => {
   if (cardType === "big") {

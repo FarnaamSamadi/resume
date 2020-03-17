@@ -10888,19 +10888,6 @@ video {
   transition-duration: 1000ms;
 }
 
-.h1 {
-  font-size: 1.875rem;
-  font-weight: 700;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  border-width: 4px;
-  border-radius: 0.375rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
 .navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -11125,6 +11112,46 @@ video {
   padding-right: 1.5rem;
 }
 
+.skill-main-div {
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f7fafc;
+  margin-bottom: 1.5rem;
+}
+
+.skill-table {
+  table-layout: fixed;
+  border-width: 4px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-color: #000;
+}
+
+.table-head {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  border-width: 1px;
+  border-color: #718096;
+}
+
+.sub-skill {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 640px) {
   .dropdown-nav-items {
     font-size: 1.125rem;
@@ -11192,6 +11219,10 @@ video {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     font-size: 1.25rem;
+  }
+
+  .table-head {
+    font-size: 1.125rem;
   }
 }
 
