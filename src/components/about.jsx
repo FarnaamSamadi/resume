@@ -7,13 +7,10 @@ const About = ({ lan }) => {
   const { about } = data;
 
   return (
-    <div className="h-screen w-full bg-gray-900">
+    <div className="part-main bg-gray-900">
       <Element name="about" className="element" />
-      <div className="mx-auto container h-full flex flex-col justify-center items-center text-center">
-        <div
-          className="flex flex-col justify-center items-center"
-          style={{ flexGrow: 5 }}
-        >
+      <div className="part-set">
+        <div className="part-container items-center">
           <h2 className="text-xl font-bold mt-3 mb-6 border-4 rounded-lg py-1 px-2 w-28 sm:py-2 sm:px-3 sm:text-2xl text-gray-200 bg-gray-900 border-gray-200">
             {about[lan].title}
           </h2>

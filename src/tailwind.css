@@ -1,10 +1,6 @@
 @tailwind base;
 @tailwind utilities;
 
-.full-page {
-  @apply h-screen w-full mx-auto flex flex-col justify-center items-center text-center;
-}
-
 .h1 {
   @apply text-3xl font-bold my-5 border-4 rounded-md py-1 px-2;
 }
@@ -81,6 +77,46 @@
   @apply fixed inset-0 w-full h-full cursor-default;
 }
 
+.part-main {
+  @apply h-screen w-full;
+}
+
+.part-set {
+  @apply mx-auto h-full flex flex-col justify-center items-center text-center;
+}
+
+.part-container {
+  @apply flex flex-col justify-center flex-grow-5;
+}
+
+.intro-h1 {
+  @apply text-2xl rounded-lg p-2 font-bold;
+}
+
+.intro-h3 {
+  @apply m-2;
+}
+
+.intro-social {
+  @apply flex flex-row justify-center items-center mt-2;
+}
+
+.features {
+  @apply text-xl p-2 font-semibold mb-5;
+}
+
+.features-lg {
+  @apply hidden text-xl p-2 font-bold mb-5;
+}
+
+.social-icon-inner {
+  @apply p-1 rounded-full overflow-hidden;
+}
+
+.social-icon-outer {
+  @apply rounded-full mr-1;
+}
+
 @screen sm {
   .dropdown-nav-items {
     @apply text-lg;
@@ -88,6 +124,10 @@
 
   .dropdown-lan-btn {
     @apply text-lg;
+  }
+
+  .social-icon-outer {
+    @apply mx-1;
   }
 }
 
@@ -106,6 +146,22 @@
 
   .dropdown-items {
     @apply hidden;
+  }
+
+  .intro-h1 {
+    @apply mb-5 text-3xl;
+  }
+
+  .intro-h3 {
+    @apply text-lg;
+  }
+
+  .features {
+    @apply hidden;
+  }
+
+  .features-lg {
+    @apply block;
   }
 }
 

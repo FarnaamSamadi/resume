@@ -1,8 +1,8 @@
 module.exports = {
   theme: {
     extend: {
-      screens: {
-        xs: "480px"
+      flexGrow: {
+        "5": "5"
       }
     },
     variants: {},

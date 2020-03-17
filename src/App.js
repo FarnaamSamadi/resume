@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import SnowStorm from "react-snowstorm";
 import Navbar from "./components/navbar/navbar";
-import Introduction from "./components/introduction";
+import Introduction from "./components/introduction/introduction";
 import About from "./components/about";
 import Skill from "./components/skill";
 import Footer from "./components/footer";
@@ -44,7 +44,7 @@ class App extends Component {
           items={this.navItems}
         />
         <SnowStorm followMouse={true} />
-        <Introduction language={lan} />
+        <Introduction lan={lan} />
         <About lan={lan} />
         <Skill lan={lan} />
         <Footer lan={lan} />
