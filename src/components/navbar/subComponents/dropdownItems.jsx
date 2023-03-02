@@ -1,30 +1,33 @@
-import React from "react";
-import NavItem from "./navItem";
+import NavItem from './navItem'
 
 const DropdownItems = ({
   items,
   onLanguageChange,
-  lan,
+  lang,
   isOpen,
-  toggleDropdown
+  toggleDropdown,
 }) => {
-  const navItems = items[lan];
+  const navItems = items[lang]
+
   function fixClass(classes) {
-    classes += isOpen ? " block" : " hidden";
-    classes += lan === "fa" ? " direction-rtl" : "";
-    return classes;
+    classes += isOpen ? ' block' : ' hidden'
+    classes += lang === 'fa' ? ' dir-rtl' : ''
+    return classes
   }
 
   return (
-    <React.Fragment>
-      <div className={fixClass("dropdown-items")}>
-        {Object.keys(navItems).map(item => (
+    <>
+      <div className={fixClass('dropdown-items')}>
+        {Object.keys(navItems).map((item) => (
           <NavItem key={item} to={item} itemName={navItems[item]} />
         ))}
-        <hr className="dropdown-hr" />
+        <i className="block mt-2 mx-auto rounded-full bg-gray-900 w-95% h-2px" />
         <div className="dropdown-nav-items mt-2">
-          <button onClick={onLanguageChange} className="dropdown-lan-btn">
-            {lan === "en" ? "Change Language" : "عوض کردن زبان"}
+          <button
+            onClick={onLanguageChange}
+            className="font-semibold cursor-pointer focus:outline-none sm:text-lg text-white"
+          >
+            {lang === 'en' ? 'Change Language' : 'عوض کردن زبان'}
           </button>
         </div>
       </div>
@@ -32,11 +35,11 @@ const DropdownItems = ({
         <button
           onClick={toggleDropdown}
           tabIndex="-1"
-          className="dropdown-close"
+          className="fixed inset-0 p-0 w-full h-full cursor-default"
         ></button>
       )}
-    </React.Fragment>
-  );
-};
+    </>
+  )
+}
 
-export default DropdownItems;
+export default DropdownItems

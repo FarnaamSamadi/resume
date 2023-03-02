@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-scroll";
+import React from 'react'
+import { Link } from 'react-scroll'
 
 const NavItem = ({ to, itemName }) => {
   return (
@@ -8,7 +8,7 @@ const NavItem = ({ to, itemName }) => {
         {itemName}
       </Link>
     </div>
-  );
-};
+  )
+}
 
-export default NavItem;
+export default NavItem

@@ -1,18 +1,18 @@
-import React from "react";
-import NavItem from "./navItem";
+import React from 'react'
+import NavItem from './navItem'
 
-const Items = ({ items, lan }) => {
-  const navItems = items[lan];
+const Items = ({ items, lang }) => {
+  const navItems = items[lang]
 
   return (
     <div
-      className={lan === "fa" ? "navbar-items direction-rtl" : "navbar-items"}
+      className={lang === 'fa' ? 'navbar-items dir-rtl' : 'navbar-items'}
     >
-      {Object.keys(navItems).map(item => (
+      {Object.keys(navItems).map((item) => (
         <NavItem key={item} to={item} itemName={navItems[item]} />
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default Items;
+export default Items

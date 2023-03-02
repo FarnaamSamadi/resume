@@ -1,19 +1,19 @@
-import React from "react";
+import styles from './dropdownButton.module.scss'
 
 const DropdownButton = ({ toggleDropdown, isOpen }) => {
   return (
-    <div className="dropdown-div" onClick={toggleDropdown}>
-      {!isOpen && (
-        <i className="dropdown-icon fa fa-bars fa-2x" aria-hidden="true"></i>
-      )}
-      {isOpen && (
-        <i
-          className="dropdown-icon relative z-10 fa fa-times fa-2x"
-          aria-hidden="true"
-        ></i>
-      )}
+    <div className="px-3 py-2 lg:hidden" onClick={toggleDropdown}>
+      <svg
+        className={`${styles.svg} ${isOpen && styles.open}`}
+        viewBox="0 0 100 100"
+        fill="black"
+      >
+        <rect width="80" height="10" x="10" y="25" rx="5"></rect>
+        <rect width="80" height="10" x="10" y="45" rx="5"></rect>
+        <rect width="80" height="10" x="10" y="65" rx="5"></rect>
+      </svg>
     </div>
-  );
-};
+  )
+}
 
-export default DropdownButton;
+export default DropdownButton

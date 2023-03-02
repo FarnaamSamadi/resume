@@ -1,0 +1,32 @@
+.svg {
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+
+  rect {
+    transform-origin: center;
+    transition: y 300ms ease-in 300ms, transform 300ms ease-in,
+      opacity 0ms 300ms;
+  }
+
+  &.open {
+    rect {
+      transition: y 300ms ease-in, transform 300ms ease-in 300ms,
+        opacity 0ms 300ms;
+    }
+
+    rect:first-child {
+      y: 45;
+      transform: rotate(45deg);
+    }
+
+    rect:nth-child(2) {
+      opacity: 0;
+    }
+
+    rect:last-child {
+      y: 45;
+      transform: rotate(-45deg);
+    }
+  }
+}

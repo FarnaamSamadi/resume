@@ -1,9 +1,8 @@
-import React from "react";
-import Star from "./star";
-import iconFinder from "../../icons/icons";
+import Star from './star'
+import iconFinder from '../../icons/icons'
 
 const SkillCard = ({ cardName, nStars, cardType }) => {
-  if (cardType === "big") {
+  if (cardType === 'big') {
     return (
       <div>
         <div className="w-24 h-24 lg:w-32 lg:h-32 rounded overflow-hidden shadow-2xl bg-white shadow-lg mx-auto mt-2">
@@ -11,8 +10,8 @@ const SkillCard = ({ cardName, nStars, cardType }) => {
         </div>
         <Star nStars={nStars} />
       </div>
-    );
-  } else if (cardType === "small") {
+    )
+  } else if (cardType === 'small') {
     return (
       <div>
         <div className="w-16 h-16 lg:w-20 lg:h-20 rounded overflow-hidden shadow-lg bg-gray-200 mx-1 mb-1">
@@ -20,8 +19,8 @@ const SkillCard = ({ cardName, nStars, cardType }) => {
         </div>
         <Star nStars={nStars} />
       </div>
-    );
+    )
   }
-};
+}
 
-export default SkillCard;
+export default SkillCard

@@ -1,30 +1,35 @@
-import React from "react";
-import SocialIcon from "./socialIcon";
-import data from "../../../data.json";
-import Features from "./features";
+import SocialIcon from './socialIcon'
+import data from '@/words/data.json'
+import Features from './features'
 
-const DataHolder = ({ lan }) => {
-  const { mainInfo, links } = data;
+const DataHolder = ({ lang }) => {
+  const { mainInfo, links } = data
+
   function fixFarsi(classes) {
-    return lan === "fa" ? (classes += " direction-rtl") : classes;
+    return lang === 'fa' ? (classes += ' dir-rtl') : classes
   }
+
   return (
     <div className="part-container">
-      <h1 className={lan === "fa" ? "intro-h1 direction-rtl" : "intro-h1"}>
-        {mainInfo[lan].partOne} <br />
-        {mainInfo[lan].partTwo}
+      <h1
+        className={`text-2xl rounded-lg p-2 font-bold lg:mb-5 lg:text-3xl ${
+          lang === 'fa' && 'dir-rtl'
+        }`}
+      >
+        {mainInfo[lang].partOne} <br />
+        {mainInfo[lang].partTwo}
       </h1>
-      <Features lan={lan} info={mainInfo} />
-      <h3 className={lan === "fa" ? "intro-h3 direction-rtl" : "intro-h3"}>
-        {mainInfo[lan].partFour}
+      <Features lang={lang} info={mainInfo} />
+      <h3 className={`m-2 lg:text-lg ${lang === 'fa' && 'dir-rtl'}`}>
+        {mainInfo[lang].partFour}
       </h3>
-      <div className="intro-social">
-        {Object.keys(links).map(item => (
+      <div className="flex flex-row justify-center items-center mt-2">
+        {Object.keys(links).map((item) => (
           <SocialIcon key={item} url={links[item]} iconName={item} />
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default DataHolder;
+export default DataHolder

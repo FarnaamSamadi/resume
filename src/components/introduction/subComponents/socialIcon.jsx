@@ -1,16 +1,15 @@
-import React from "react";
-import iconFinder from "../../icons/icons";
+import iconFinder from '../../icons/icons'
 
-const SocialIcon = ({ url, iconName }) => {
+function SocialIcon({ url, iconName }) {
   return (
     <a href={url}>
-      <div className="social-icon-outer bg-gray-900">
-        <div className="social-icon-inner">
-          {iconFinder(iconName, 40, "#f7fafc")}
+      <div className="rounded-full mr-1 bg-gray-900 sm:mx-1">
+        <div className="p-1 rounded-full overflow-hidden">
+          {iconFinder(iconName, 40, '#f7fafc')}
         </div>
       </div>
     </a>
-  );
-};
+  )
+}
 
-export default SocialIcon;
+export default SocialIcon

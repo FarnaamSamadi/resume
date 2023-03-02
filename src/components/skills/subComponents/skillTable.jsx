@@ -1,25 +1,24 @@
-import React from "react";
-import SkillCard from "./skillCard";
-import data from "../../../data.json";
+import SkillCard from './skillCard'
+import data from '@/words/data.json'
 
-const SkillTable = ({ lan }) => {
-  const { info } = data.skills;
-  const { otherSkills } = data;
+function SkillTable({ lang }) {
+  const { info } = data.skills
+  const { otherSkills } = data
 
   return (
-    <table className="container skill-table sm:max-w-lg lg:max-w-2xl">
+    <table className="container table-fixed border-4 mx-4 border-black sm:max-w-lg lg:max-w-2xl">
       <thead>
         <tr className="border">
-          <th className="w-4/12 table-head">
-            {lan === "fa" ? "زبان" : "Language"}
+          <th className="w-4/12 px-4 py-2 font-bold border border-gray-600 lg:text-lg">
+            {lang === 'fa' ? 'زبان' : 'Language'}
           </th>
-          <th className="w-7/12 table-head">
-            {lan === "fa" ? "کتابخانه" : "Library"}
+          <th className="w-7/12 px-4 py-2 font-bold border border-gray-600 lg:text-lg">
+            {lang === 'fa' ? 'کتابخانه' : 'Library'}
           </th>
         </tr>
       </thead>
       <tbody>
-        {info.map(skill => (
+        {info.map((skill) => (
           <tr key={skill.name} className="border">
             <td className="border border-gray-600">
               <SkillCard
@@ -29,8 +28,8 @@ const SkillTable = ({ lan }) => {
               />
             </td>
             <td className="border border-gray-600">
-              <div className="sub-skill">
-                {skill.subSkill.map(s => (
+              <div className="flex flex-wrap justify-center mx-auto">
+                {skill.subSkill.map((s) => (
                   <SkillCard
                     key={s.name}
                     cardName={s.name}
@@ -44,13 +43,13 @@ const SkillTable = ({ lan }) => {
         ))}
         <tr className="border border-gray-600">
           <th colSpan="2" className="table-head">
-            {otherSkills.title[lan]}
+            {otherSkills.title[lang]}
           </th>
         </tr>
         <tr>
           <td colSpan="2">
-            <div className="sub-skill w-10/12">
-              {otherSkills.subSkill.map(s => (
+            <div className="flex flex-wrap justify-center mx-auto w-10/12">
+              {otherSkills.subSkill.map((s) => (
                 <SkillCard
                   key={s.name}
                   cardName={s.name}
@@ -63,7 +62,7 @@ const SkillTable = ({ lan }) => {
         </tr>
       </tbody>
     </table>
-  );
-};
+  )
+}
 
-export default SkillTable;
+export default SkillTable
