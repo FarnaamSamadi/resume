@@ -5,13 +5,17 @@
 
   rect {
     transform-origin: center;
-    transition: y 300ms ease-in 300ms, transform 300ms ease-in,
+    transition:
+      y 300ms ease-in 300ms,
+      transform 300ms ease-in,
       opacity 0ms 300ms;
   }
 
   &.open {
     rect {
-      transition: y 300ms ease-in, transform 300ms ease-in 300ms,
+      transition:
+        y 300ms ease-in,
+        transform 300ms ease-in 300ms,
         opacity 0ms 300ms;
     }
 
